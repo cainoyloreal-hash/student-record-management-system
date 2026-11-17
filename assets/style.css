@@ -1,51 +1,101 @@
 
+/* =====================================
+   STUDENT RECORD MANAGEMENT SYSTEM
+   BLUE EDUCATION THEME
+   ===================================== */
+
 /* GENERAL PAGE BACKGROUND */
 body {
     background:
         linear-gradient(
-            rgba(13, 39, 72, 0.48),
-            rgba(13, 39, 72, 0.48)
+            rgba(10, 30, 65, 0.68),
+            rgba(10, 30, 65, 0.68)
         ),
         url("school-background.jpg") center center / cover fixed no-repeat;
+
     color: #1f2937;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* NAVIGATION BAR */
 .app-navbar {
     background: #173b68;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+.app-navbar .navbar-brand,
+.app-navbar a {
+    color: #ffffff;
+}
+
+/* PAGE HEADINGS */
+h1, h2, h3, h4, h5 {
+    color: #173b68;
+    font-weight: 700;
+}
+
+/* DASHBOARD HEADING */
+body > .container h1,
+body > .container h2 {
+    color: #ffffff;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.65);
+}
+
+/* PAGE SUBTITLES */
+body > .container > p,
+body > .container .text-muted {
+    color: #f1f5fb !important;
 }
 
 /* DASHBOARD STATISTICS */
 .stat-card {
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(255, 255, 255, 0.97);
+    color: #1f2937;
     border-radius: 14px;
     padding: 1.35rem;
-    box-shadow: 0 4px 15px rgba(20, 40, 70, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
     height: 100%;
+}
+
+.stat-card h1,
+.stat-card h2,
+.stat-card h3,
+.stat-card h4 {
+    color: #173b68;
 }
 
 /* CONTENT CARDS */
 .card {
-    background: rgba(255, 255, 255, 0.97);
+    background: rgba(255, 255, 255, 0.98);
+    color: #1f2937;
     border: none;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(20, 40, 70, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
 }
 
 .card-header {
-    background: #f1f6fc;
+    background: #eaf1f9;
     border-bottom: 1px solid #dce6f1;
     color: #173b68;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.card-body {
+    color: #1f2937;
+}
+
+/* TEXT INSIDE CARDS */
+.card .text-muted,
+.stat-card .text-muted {
+    color: #526174 !important;
 }
 
 /* TABLE DESIGN */
 .table {
     background: #ffffff;
+    color: #1f2937;
     margin-bottom: 0;
 }
 
@@ -58,21 +108,39 @@ body {
     white-space: nowrap;
 }
 
+.table tbody td {
+    color: #263445;
+    vertical-align: middle;
+}
+
 .table tbody tr:hover {
     background: #f1f6fc;
 }
 
-/* FORMS AND BUTTONS */
+/* FORMS */
+.form-label {
+    color: #173b68;
+    font-weight: 600;
+}
+
 .form-control,
-.form-select,
-.btn {
+.form-select {
+    border: 1px solid #cbd5e1;
     border-radius: 9px;
+    color: #1f2937;
+    background-color: #ffffff;
 }
 
 .form-control:focus,
 .form-select:focus {
     border-color: #3978b8;
-    box-shadow: 0 0 0 0.2rem rgba(57, 120, 184, 0.15);
+    box-shadow: 0 0 0 0.2rem rgba(57, 120, 184, 0.18);
+}
+
+/* BUTTONS */
+.btn {
+    border-radius: 9px;
+    font-weight: 600;
 }
 
 .btn-primary {
@@ -85,20 +153,44 @@ body {
     border-color: #173b68;
 }
 
+.btn-outline-light {
+    color: #ffffff;
+}
+
+/* LINKS */
+a {
+    color: #075bb5;
+}
+
+a:hover {
+    color: #173b68;
+}
+
+/* ALERT MESSAGES */
+.alert {
+    border-radius: 10px;
+}
+
 /* FOOTER */
 footer {
     margin-top: 2rem;
-    color: #ffffff;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: #ffffff !important;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 2px 4px #000000;
 }
 
-/* MOBILE DISPLAY */
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
     body {
         background-attachment: scroll;
     }
 
     .stat-card {
+        margin-bottom: 1rem;
+    }
+
+    .card {
         margin-bottom: 1rem;
     }
 }
