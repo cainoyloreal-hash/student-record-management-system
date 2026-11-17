@@ -1,0 +1,8 @@
+body { background: #f4f7fb; color: #1f2937; }
+.app-navbar { background: #173b68; }
+.stat-card { background: #fff; border-radius: 14px; padding: 1.35rem; box-shadow: 0 2px 12px rgba(20,40,70,.06); height: 100%; }
+.card { border-radius: 14px; overflow: hidden; }
+.card-header { border-bottom: 1px solid #edf0f5; }
+.table thead th { background: #f8fafc; color: #526174; font-size: .83rem; text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; }
+.form-control, .form-select, .btn { border-radius: 9px; }
+footer { margin-top: 2rem; }
