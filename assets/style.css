@@ -1,8 +1,104 @@
-body { background: #f4f7fb; color: #1f2937; }
-.app-navbar { background: #173b68; }
-.stat-card { background: #fff; border-radius: 14px; padding: 1.35rem; box-shadow: 0 2px 12px rgba(20,40,70,.06); height: 100%; }
-.card { border-radius: 14px; overflow: hidden; }
-.card-header { border-bottom: 1px solid #edf0f5; }
-.table thead th { background: #f8fafc; color: #526174; font-size: .83rem; text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; }
-.form-control, .form-select, .btn { border-radius: 9px; }
-footer { margin-top: 2rem; }
+
+/* GENERAL PAGE BACKGROUND */
+body {
+    background:
+        linear-gradient(
+            rgba(13, 39, 72, 0.48),
+            rgba(13, 39, 72, 0.48)
+        ),
+        url("school-background.jpg") center center / cover fixed no-repeat;
+    color: #1f2937;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVIGATION BAR */
+.app-navbar {
+    background: #173b68;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* DASHBOARD STATISTICS */
+.stat-card {
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 14px;
+    padding: 1.35rem;
+    box-shadow: 0 4px 15px rgba(20, 40, 70, 0.15);
+    height: 100%;
+}
+
+/* CONTENT CARDS */
+.card {
+    background: rgba(255, 255, 255, 0.97);
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(20, 40, 70, 0.15);
+}
+
+.card-header {
+    background: #f1f6fc;
+    border-bottom: 1px solid #dce6f1;
+    color: #173b68;
+    font-weight: 600;
+}
+
+/* TABLE DESIGN */
+.table {
+    background: #ffffff;
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background: #eaf1f9;
+    color: #173b68;
+    font-size: 0.83rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+}
+
+.table tbody tr:hover {
+    background: #f1f6fc;
+}
+
+/* FORMS AND BUTTONS */
+.form-control,
+.form-select,
+.btn {
+    border-radius: 9px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #3978b8;
+    box-shadow: 0 0 0 0.2rem rgba(57, 120, 184, 0.15);
+}
+
+.btn-primary {
+    background: #24578c;
+    border-color: #24578c;
+}
+
+.btn-primary:hover {
+    background: #173b68;
+    border-color: #173b68;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 2rem;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* MOBILE DISPLAY */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+}
